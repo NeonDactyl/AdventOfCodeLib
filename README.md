@@ -61,6 +61,27 @@ class Program
 }
 ```
 
+You can also use this library from within F#, for example:
+
+```fsharp
+open AdventOfCodeLibrary
+
+type aoc15_1(session:string) =
+  inherit AdventOfCodeDay(2015, 1, session)
+  override this.PartOne input:string =
+    input
+    |> String.filter (fun s -> (s > '0' && s < '9'))
+    
+  override this.PartTwo input:string =
+    input
+    |> String.replicate 3
+
+let myaoc151 = aoc15_1 "SOME_SESSION_COOKIE_VALUE"
+let res = myaoc151.PartTwo ()
+printfn "%s" myaoc151.Input
+printfn "%s" res
+```
+
 One thing to note is that the SubmitPartOne and SubmitPartTwo methods return an int i by reading the response from the server:
 - 0 if your result equals the expected (AKA you're correct)
 - 1 if your result is too high
