@@ -47,7 +47,7 @@ class Program
         var result1 = aoc15_1.PartOne();
         var result2 = aoc15_1.PartTwo();
 
-        int isCorrec1 = aoc15_1.SubmitPartOne(result1);
+        int isCorrect1 = aoc15_1.SubmitPartOne(result1);
         int isCorrect2 = aoc15_1.SubmitPartTwo(result2);
 
         if (isCorrect2 == 0) Console.WriteLine("got it right");
