@@ -14,9 +14,9 @@ If using inside a repository that will be pushed remotely, I recommend saving it
 
 Create a class that inherits from `AdventOfCodeDay` for the problem on a given day, for example:
 ```csharp
-public class Aoc2015_01 : AdventOfCodeDay
+public class Aoc15_1 : AdventOfCodeDay
 {
-    public Aoc2015_01(string session = "") : base(2015, 1, session) { }
+    public Aoc15_1(string session = "") : base(2015, 1, session) { }
     public override string PartOne(string input)
     {
         return String.Empty;
