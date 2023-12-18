@@ -3,6 +3,27 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Advent of Code Library</Title>
+    <Authors>NeonDactyl</Authors>
+    <Description>Used as a baseline for doing Advent of Code problems</Description>
+    <PackageProjectUrl>https://github.com/NeonDactyl/AdventOfCodeLib</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/NeonDactyl/AdventOfCodeLib</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>advent of code</PackageTags>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
