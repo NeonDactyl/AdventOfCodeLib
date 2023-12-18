@@ -8,7 +8,7 @@ I created this library to assist in faster gathering and submission for problems
 
 Use developer tools to get your session cookie from AOC. This will be used for retrieving your user specific input, and submitting your results.
 
-![AdventOfCodeSession](https://github.com/NeonDactyl/AdventOfCodeLib/assets/42546733/0463be58-7a0d-47e4-885c-0f4b87e18a58)
+![AdventOfCodeSession](https://raw.githubusercontent.com/NeonDactyl/AdventOfCodeLib/main/AdventOfCodeSession.png)
 
 
 If using inside a repository that will be pushed remotely, I recommend saving it in a file that is in your .gitignore, or saving it into environment variables to load into your application.
