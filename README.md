@@ -43,14 +43,18 @@ class Program
         var your_input = aoc15_1.Input;
         var testingInput = "5 9 2 8\n9 4 7 3\n3 8 6 5";
         var testresult2 = aoc15_1.PartTwo(testingInput);
+
         var result1 = aoc15_1.PartOne();
         var result2 = aoc15_1.PartTwo();
+
         int isCorrec1 = aoc15_1.SubmitPartOne(result1);
         int isCorrect2 = aoc15_1.SubmitPartTwo(result2);
+
         if (isCorrect2 == 0) Console.WriteLine("got it right");
         else if (isCorrect2 == 1) Console.WriteLine("Answer was too high");
         else if (isCorrect2 == -1) Console.WriteLine("Answer was too low");
         else throw new Exception("what happened here");
+
         Console.WriteLine(result2);
     }
 }
